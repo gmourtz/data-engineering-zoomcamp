@@ -18,6 +18,7 @@ CAST(payment_type AS STRING), fare_amount, tolls_amount, tip_amount
 FROM `taxi-rides-ny.nytaxi.yellow_tripdata_partitoned` WHERE fare_amount != 0
 );
 
+
 -- CREATE MODEL WITH DEFAULT SETTING
 CREATE OR REPLACE MODEL `taxi-rides-ny.nytaxi.tip_model`
 OPTIONS
